@@ -1,2 +1,2 @@
-# APiI
-⚡ Lightweight WebAPI runs on a Raspberry Pi, with commonly used functions.
+# Catboy's APiI  
+⚡ Lightweight WebAPI runs on a Raspberry Pi, provides commonly used functions.
