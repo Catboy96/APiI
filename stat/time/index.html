@@ -7,7 +7,7 @@
     <meta name="author" content="Ralf Ren">
     <link rel="icon" href="../../static/favicon.ico">
 
-    <title>Memory - Statistics - APiI</title>
+    <title>Time - Statistics - APiI</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../static/bootstrap.min.css" rel="stylesheet">
@@ -38,66 +38,31 @@
 
     <!-- Begin page content -->
     <main role="main" class="container">
-      <h1 class="mt-5">Memory</h1>
-      <p class="lead">APIs for RAM statistics.</p>
+      <h1 class="mt-5">Time</h1>
+      <p class="lead">APIs for time.</p>
       <p><br /></p>
 
-      <h3><code>app.sh</code></h3>
-      <p>Returns the size of RAM used by applications. (result in KBytes)</p>
-      <code>GET /stat/mem/app.sh => JSON:<br/>
-        {"result":133796}
+      <h3><code>date.sh</code></h3>
+      <p>Returns system current date and time.</p>
+      <code>GET /stat/time/date.sh => JSON:<br/>
+        {"result":"Fri 12 Jul 2019 10:16:57 AM CST"}
       </code>
       <p><br /></p>
 
-      <h3><code>avail.sh</code></h3>
-      <p>Returns available RAM size. (result in KBytes)</p>
-      <code>GET /stat/mem/avail.sh => JSON:<br/>
-        {"result":837264}
+      <h3><code>upsince.sh</code></h3>
+      <p>Returns system uptime since which time.</p>
+      <code>GET /stat/time/upsince.sh => JSON:<br/>
+        {"result":"2019-07-12 08:11:02"}
       </code>
       <p><br /></p>
 
-      <h3><code>buff.sh</code></h3>
-      <p>Returns the size of RAM used by buffers. (result in KBytes)</p>
-      <code>GET /stat/mem/buff.sh => JSON:<br/>
-        {"result":52612}
+      <h3><code>uptime.sh</code></h3>
+      <p>Returns system uptime.</p>
+      <code>GET /stat/time/uptime.sh => JSON:<br/>
+        {"result":"up 2 hours, 6 minutes"}
       </code>
       <p><br /></p>
-
-      <h3><code>cache.sh</code></h3>
-      <p>Returns cached RAM size. (result in KBytes)</p>
-      <code>GET /stat/mem/cache.sh => JSON:<br/>
-        {"result":329392}
-      </code>
-      <p><br /></p>
-
-      <h3><code>free.sh</code></h3>
-      <p>Returns free RAM size. (result in KBytes)</p>
-      <code>GET /stat/mem/free.sh => JSON:<br/>
-        {"result":484512}
-      </code>
-      <p><br /></p>
-
-      <h3><code>total.sh</code></h3>
-      <p>Returns total RAM size. (result in KBytes)</p>
-      <code>GET /stat/mem/total.sh => JSON:<br/>
-        {"result":999040}
-      </code>
-      <p><br /></p>
-
-      <h3><code>swaptotal.sh</code></h3>
-      <p>Returns total swap size. (result in KBytes)</p>
-      <code>GET /stat/mem/swaptotal.sh => JSON:<br/>
-        {"result":102396}
-      </code>
-      <p><br /></p>
-
-      <h3><code>swapfree.sh</code></h3>
-      <p>Returns free swap size. (result in KBytes)</p>
-      <code>GET /stat/mem/swapfree.sh => JSON:<br/>
-        {"result":102396}
-      </code>
-      <p><br /></p>
-
+      
       <p><br /></p>
 
     </main>
@@ -113,4 +78,5 @@
     <script src="../../static/bootstrap.min.js"></script>
   </body>
 </html>
+
 
