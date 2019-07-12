@@ -19,7 +19,7 @@
 sudo apt install lighttpd -y  
 vi /etc/lighttpd/lighttpd.conf
 ```
-Add `cgi.assign = ( ".sh" => "/bin/bash" )` at the end of the file, add `"mod_cgi",` to both `server.modules = (` and `server.modules += (`.
+Add `cgi.assign = ( ".sh" => "/bin/bash" )` at the end of the file, add `"mod_cgi",` to both `server.modules = (` and `server.modules += (`. Then restart lighttpd by `sudo systemctl restart lighttpd`.
 * Clone the project to web root directory.  
 ```
 cd /var/www/html
