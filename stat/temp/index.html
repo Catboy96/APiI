@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="APiI Document">
     <meta name="author" content="Ralf Ren">
-    <link rel="icon" href="../static/favicon.ico">
+    <link rel="icon" href="../../static/favicon.ico">
 
-    <title>Statistics - APiI</title>
+    <title>Temperature - Statistics - APiI</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../static/bootstrap.min.css" rel="stylesheet">
+    <link href="../../static/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../static/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="../../static/sticky-footer-navbar.css" rel="stylesheet">
 
   </head>
 
@@ -38,30 +38,25 @@
 
     <!-- Begin page content -->
     <main role="main" class="container">
-      <h1 class="mt-5">Statistics</h1>
-      <p class="lead">APIs for statistics and information.</p>
+      <h1 class="mt-5">Temperature</h1>
+      <p class="lead">APIs for temperature information.</p>
       <p><br /></p>
 
-      <h3><a href="/stat/cpu"><code>cpu</code></a></h3>
-      <p>APIs for CPU statistics.</p>
+      <h3><code>cpu.sh</code></h3>
+      <p>Returns current CPU temperature.</p>
+      <code>GET /stat/temp/cpu.sh => JSON:<br/>
+        {"result":"48'C"}
+      </code>
       <p><br /></p>
 
-      <h3><a href="/stat/disk"><code>disk</code></a></h3>
-      <p>APIs for disk statistics.</p>
+      <h3><code>gpu.sh ⚡</code></h3>
+      <p>Returns current GPU temperature.</p>
+      <code>GET /stat/temp/gpu.sh => JSON:<br/>
+        {"result":"48.9'C"}
+      </code>
       <p><br /></p>
 
-      <h3><a href="/stat/mem"><code>mem</code></a></h3>
-      <p>APIs for RAM statistics.</p>
-      <p><br /></p>
-
-      <h3><a href="/stat/time"><code>time</code></a></h3>
-      <p>APIs for time.</p>
-      <p><br /></p>
-
-      <h3><a href="/stat/temp"><code>temp</code></a></h3>
-      <p>APIs for temperature information.</p>
-      <p><br /></p>
-
+      <p>⚡: API requires user "www-data" in sudoers file with no-password enabled.</p>
       <p><br /></p>
 
     </main>
@@ -72,8 +67,8 @@
       </div>
     </footer>
 
-    <script src="../static/jquery.slim.min.js"></script>
-    <script src="../static/popper.min.js"></script>
-    <script src="../static/bootstrap.min.js"></script>
+    <script src="../../static/jquery.slim.min.js"></script>
+    <script src="../../static/popper.min.js"></script>
+    <script src="../../static/bootstrap.min.js"></script>
   </body>
 </html>
