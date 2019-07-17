@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="APiI Document">
+    <meta name="author" content="Ralf Ren">
+    <link rel="icon" href="../../static/favicon.ico">
+
+    <title>Time - Information - APiI</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../static/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../static/sticky-footer-navbar.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="/">APiI</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/info">Information</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/sys">System</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/net">Network</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/bt">Bluetooth</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pwr">Power</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/fs">Filesystem</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+      <h1 class="mt-5">Time</h1>
+      <p class="lead">APIs for time.</p>
+      <p><br /></p>
+
+      <h3><code>date.sh</code></h3>
+      <p>Returns system current date and time.</p>
+      <code>GET /info/time/date.sh => JSON:<br/>
+        {"result":"Fri 12 Jul 2019 10:16:57 AM CST"}
+      </code>
+      <p><br /></p>
+
+      <h3><code>upsince.sh</code></h3>
+      <p>Returns system uptime since which time.</p>
+      <code>GET /info/time/upsince.sh => JSON:<br/>
+        {"result":"2019-07-12 08:11:02"}
+      </code>
+      <p><br /></p>
+
+      <h3><code>uptime.sh</code></h3>
+      <p>Returns system uptime.</p>
+      <code>GET /info/time/uptime.sh => JSON:<br/>
+        {"result":"up 2 hours, 6 minutes"}
+      </code>
+      <p><br /></p>
+
+      <p><br /></p>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">&copy;2019 Ralf Ren. All rights reserved.</span>
+      </div>
+    </footer>
+
+    <script src="../../static/jquery.slim.min.js"></script>
+    <script src="../../static/popper.min.js"></script>
+    <script src="../../static/bootstrap.min.js"></script>
+  </body>
+</html>
